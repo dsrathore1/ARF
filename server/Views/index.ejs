@@ -8,7 +8,102 @@
     <title>Data Input</title>
 </head>
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .formDiv {
+        margin: 2rem 4rem;
+    }
+
+    .arrayDivClass {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .operationDiv {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        margin: 1rem 4rem;
+        flex-direction: column;
+    }
+
+    .certiDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 1rem 4rem;
+        justify-content: start;
+    }
+
+    .operationIp{
+        margin: 4px 0;
+        padding: .3rem .1rem;
+    }
+    
+    .certiIp{
+        margin: 4px 0;
+        padding: .3rem .1rem;
+    }
+
+    .submitBtn{
+        padding: .5rem 4rem;
+        margin: 0 3.9rem;
+    }
+
+</style>
+
 <body>
-    <h1>Hello World, I'm HomePage</h1>
+    <form class="formDiv" action="/postData" method="post">
+        <input placeholder="Name" name="name" type="text"></input>
+
+        <input placeholder="Email" name="email" type="email"></input>
+
+        <input placeholder="Contact Number" name="contactNum" type="tel"></input>
+
+        <input placeholder="Rank" name="rank" type="text"></input>
+
+        <textarea placeholder="Address" name="address" type="text"></textarea>
+
+        <select name="role">
+            <option>Volunteer</option>
+            <option>Admin</option>
+        </select>
+
+        <div class="arrayDivClass">
+            <div class="operationDiv">
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
+            </div>
+
+            <div class="certiDiv">
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
+            </div>
+        </div>
+        <button class="submitBtn" type="submit">Submit</button>
+    </form>
+
 </body>
+
 </html>

@@ -34,6 +34,6 @@ const Schema = await mongoose.Schema({
     }
 });
 
-const model = new mongoose.model("Data", Schema);
+const model = new mongoose.model("member", Schema);
 
 export default model;

@@ -20,7 +20,7 @@ export const postData = async (req, res) => {
         await dataInput.save();
 
         res.status(200);
-        res.json(dataInput);
+        res.redirect("/");
         console.log(dataInput);
     } catch (error) {
         console.log(error);
