@@ -20,7 +20,7 @@ const SideMenu = () => {
                         <Link to={"/settings"}><li className='sideMenuList setting'><GoSettings style={{ marginRight: "1rem" }} />Settings</li></Link>
                     </ol>
                 </div>
-                <Link to={"/"}>  <span className='sideMenuLogOutBtn'><HiOutlineLogout style={{ marginRight: ".5rem", fontSize:"1.8rem"}} /></span></Link>
+                <Link to={"/login"}>  <span className='sideMenuLogOutBtn'><HiOutlineLogout style={{ marginRight: ".5rem", fontSize:"1.8rem"}} /></span></Link>
             </div>
         </>
     )

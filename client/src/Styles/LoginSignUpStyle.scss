@@ -1,0 +1,177 @@
+.bg {
+    color: #fff;
+}
+
+.loginMainContainer {
+    background-image: linear-gradient(to left, #252525ad, #000000), url("../Assets/bg.jpg");
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+.loginNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #00000042;
+    height: 10vh;
+    width: 100vw;
+    padding: 0 3rem;
+    position: fixed;
+}
+
+.loginLogo {
+    height: 4rem;
+}
+
+.loginLogoName {
+    margin: 0 2rem 0 .5rem;
+    text-transform: uppercase;
+}
+
+.loginNavLinks {
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    color: #8888a1;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.loginNavLinks:hover {
+    color: #fff;
+}
+
+.loginContentContainer {
+    width: 40%;
+    height: 100%;
+    padding: 7rem 3rem 5rem 3rem;
+    background: linear-gradient(to right, #000000, #ffffff00);
+}
+
+.loginNow {
+    text-transform: uppercase;
+    margin-bottom: -.5rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.fullStop {
+    background: #9370d8;
+    margin-left: .4rem;
+    margin-bottom: .5rem;
+    height: .9rem;
+    width: .9rem;
+    border-radius: 50%;
+}
+
+.signUpQ {
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    color: #8888a1;
+}
+
+.signUpBtn {
+    color: #a984f2;
+    font-size: 1rem;
+    margin-left: .4rem;
+    text-transform: uppercase;
+}
+
+
+.commonDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: .5rem .2rem;
+}
+
+
+.inputContainer {
+    border-radius: 8px;
+    margin-top: .5rem;
+    display: flex;
+    background: #ffffff1d;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    padding: .2rem 0;
+}
+
+.loginInputs {
+    width: 90%;
+    height: 100%;
+    padding: 0 .4rem;
+    color: #fff;
+    font-size: 1rem;
+    caret-color: #c4a6ff;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+
+.loginInputs:focus::placeholder {
+    color: #d0d0d0;
+}
+
+.loginLabels {
+    color: #a984f2;
+    padding: 0 .4rem;
+    font-size: 1.05rem;
+}
+
+.loginNowBtn {
+    background: #9370d8;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.loginNowBtn:active {
+    transform: translateY(2px);
+}
+
+.uNameDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fNameIp {
+    padding: 0 .5rem;
+}
+
+.lNameIp {
+    padding: 0 .5rem;
+}
+
+.signUpLogo {
+    margin-top: -.1rem;
+}
+
+option {
+    color: #fff;
+    background: #8f8f8f;
+}
+
+.usernameLabel {
+    width: 100%;
+}
+

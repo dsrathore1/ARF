@@ -4,7 +4,7 @@ import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import Logo from "../Assets/Logo.png";
-import "../Styles/LoginSignUpStyle.css";
+import "../Styles/LoginSignUpStyle.scss";
 
 const SignUp = () => {
     return (
@@ -13,12 +13,12 @@ const SignUp = () => {
                 <div className='loginNav'>
                     <img className='loginLogo ' src={Logo} alt='#logo' />
                     <h2 className='loginLogoName'>ARForce</h2>
-                    <Link className='loginNavLinks loginHome' to={"/sd"}>Home</Link>
+                    <Link className='loginNavLinks loginHome' to={"/"}>Home</Link>
                     <Link className='loginNavLinks loginJoin' to={"/login"}>Login</Link>
                 </div>
                 <div className='loginContentContainer'>
-                    <h1 className='loginNow signUpLogo'>CREATE NEW ACCOUNT<span className='fullStop'>.</span></h1>
-                    <p className='signUpQ'>Already have an account? <Link className='signUpBtn' to={"/signUp"}>Log In</Link></p>
+                    <h1 className='loginNow signUpLogo'>CREATE NEW ACCOUNT<div className='fullStop'></div></h1>
+                    <p className='signUpQ'>Already have an account? <Link className='signUpBtn' to={"/login"}>Log In</Link></p>
                     <form className='formData'>
                         <div className='commonDiv' >
                             <div className='uNameDiv'>
@@ -51,7 +51,7 @@ const SignUp = () => {
                             <label className='loginLabels emailLabel'>Email</label>
                             <div className='inputContainer'>
                                 <input className='loginInputs emailIp' placeholder='examplezyx@gmail.com' />
-                                <HiOutlineMail className='loginMailIcon' style={{ fontSize: "1.5rem" }} />
+                                <HiOutlineMail style={{ fontSize: "1.5rem" }} />
                             </div>
                         </div>
                         <div className='commonDiv pwdDiv'>
