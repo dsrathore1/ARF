@@ -11,20 +11,40 @@ const SignUp = () => {
         <>
             <div className='loginMainContainer'>
                 <div className='loginNav'>
-                    <img className='loginLogo' src={Logo} alt='#logo' />
+                    <img className='loginLogo ' src={Logo} alt='#logo' />
                     <h2 className='loginLogoName'>ARForce</h2>
                     <Link className='loginNavLinks loginHome' to={"/sd"}>Home</Link>
-                    <Link className='loginNavLinks loginJoin' to={"/signUp"}>Login</Link>
+                    <Link className='loginNavLinks loginJoin' to={"/login"}>Login</Link>
                 </div>
                 <div className='loginContentContainer'>
-                    <h1 className='loginNow'>CREATE NEW ACCOUNT<span className='fullStop'>.</span></h1>
-                    <p className='signUpQ'>Don't have an account? <Link className='signUpBtn' to={"/signUp"}>Sign Up</Link></p>
+                    <h1 className='loginNow signUpLogo'>CREATE NEW ACCOUNT<span className='fullStop'>.</span></h1>
+                    <p className='signUpQ'>Already have an account? <Link className='signUpBtn' to={"/signUp"}>Log In</Link></p>
                     <form className='formData'>
-                        <div className='commonDiv uNameDiv' >
-                            <label className='loginLabels usernameLabel'>Username</label>
+                        <div className='commonDiv' >
+                            <div className='uNameDiv'>
+                                <div className='fName'>
+                                    <label className='loginLabels usernameLabel'>First Name</label>
+                                    <div className='inputContainer fNameIp'>
+                                        <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
+                                        <BiUser style={{ fontSize: "1.5rem" }} />
+                                    </div>
+                                </div>
+                                <div className='lName'>
+                                    <label className='loginLabels usernameLabel'>Last Name</label>
+                                    <div className='inputContainer lNameIp'>
+                                        <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
+                                        <BiUser style={{ fontSize: "1.5rem" }} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='commonDiv emailDiv'>
+                            <label className='loginLabels emailLabel'>Role</label>
                             <div className='inputContainer'>
-                                <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
-                                <BiUser style={{ fontSize: "1.5rem" }} />
+                                <select className='loginInputs selectIp' >
+                                    <option>Volunteer</option>
+                                    <option>Admin</option>
+                                </select>
                             </div>
                         </div>
                         <div className='commonDiv emailDiv'>
