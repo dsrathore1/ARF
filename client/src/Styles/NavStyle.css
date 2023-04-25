@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* 
+::-webkit-scrollbar{
+    display: none;
+} */
+
+body {
+    background: #030529;
+}
+
+.navContainer {
+    display: flex;
+    background: #ffffff15;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 10px #000000;
+    position: fixed;
+    z-index: 1;
+    top: -.2rem;
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 25px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    background: #9370d8;
+    padding: .6rem 10rem .6rem 7rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.btn {
+    margin-right: 1rem;
+    padding: .6rem 1.6rem;
+    border: 2.5px solid #9370d8;
+    background: none;
+    border-radius: 1.5rem;
+    color: #9370d8;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 740;
+    text-decoration: none;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.s {
+    font-weight: 800;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #030529;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists {
+    display: flex;
+    list-style: none;
+}
+
+.list {
+    padding: 2rem;
+    margin-right: 3rem;
+    color: #ffffffb4;
+    transition: all .2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #ac4ce4;
+    color: #fff;
+}
+

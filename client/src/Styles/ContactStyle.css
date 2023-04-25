@@ -1,0 +1,155 @@
+.contactContainer {
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Nav */
+
+.contactNav {
+    height: 10vh;
+    background: #ffffff15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactNavLeft {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    height: 5rem;
+}
+
+.contactNavRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactSearchContainer {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ffffff1d;
+    padding: .5rem 0.8rem;
+    border-radius: 4rem;
+    margin-left: 4rem;
+}
+
+.contactSearchBar {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: .6rem;
+    width: 100%;
+}
+
+.contactSearchIcon {
+    height: 1.8rem
+}
+
+.adminProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.adminProfilePic {
+    margin: 0 1rem;
+    height: 2rem;
+}
+
+
+.adminName {
+    color: #9370d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.adminEmail {
+    color: #939393;
+    width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: .8rem;
+}
+
+/* Nav */
+
+
+/* Left Side */
+
+.contactPageLeftSide {
+    width: 15%;
+}
+
+/* Left Side */
+
+
+/* Right Side */
+
+.contactPageRightSide {
+    width: 100%;
+    height: 90vh;
+}
+
+.rightSideHandler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.totalMembersData {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.memberBtn {
+    outline: none;
+    border: none;
+    width: 8vw;
+    height: 8vh;
+    background: #fff;
+    color: #9370d8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 4px solid #fff;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.volunteersFindBtn {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    letter-spacing: -.5px;
+}
+
+
+.adminFindBtn {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
+}
+
+
+.memberBtn:focus {
+    border-bottom: 4px solid #9370d8;
+    color: #000;
+}
+
+
+/* Right Side */

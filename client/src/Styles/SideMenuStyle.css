@@ -1,0 +1,50 @@
+.sideMenuMainContainer {
+    position: relative;
+    height: 90vh;
+    background: #ffffff1d;
+    width: 15vw;
+}
+
+.sideMenuNavigation {
+    position: absolute;
+    top: 2rem;
+    padding: .5rem 0;
+    width: 100%;
+}
+
+.sideMenuAllList {
+    list-style: none;
+}
+
+.sideMenuList {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: all .2s ease;
+}
+
+.sideMenuList:hover {
+    background: #ffffff1d;
+    border-left: 4px solid #fff;
+}
+
+.sideMenuContact {
+    background: #ffffff1d;
+    border-left: 4px solid #fff;
+}
+
+.sideMenuLogOutBtn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    display: flex;  
+}

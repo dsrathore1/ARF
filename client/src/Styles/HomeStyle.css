@@ -1,0 +1,93 @@
+.homeMainContainer {
+    margin-top: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.locations {
+    display: flex;
+}
+
+.locationImg {
+    height: 2.4rem;
+}
+
+.dis {
+    color: #ff5656;
+    font-weight: 700;
+}
+
+.homeTitle {
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: -3rem;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(90deg, #670ca8, #9047e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.homeClick {
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.emergencyBtn {
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+    margin-top: 4rem;
+    background: #9d47e9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.emergencyBtn:active {
+    transform: translateY(4px);
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.profileImg{
+    height: 2.4rem;
+}
+
+.profilePara{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.alertIcon{
+    position: absolute;
+    top:2.3rem;
+    left: -3.1rem;
+    height: 2.4rem;
+}
+
+.center{
+    position: relative;
+}
