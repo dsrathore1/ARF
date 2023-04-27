@@ -40,21 +40,20 @@
         justify-content: start;
     }
 
-    .operationIp{
-        margin: 4px 0;
-        padding: .3rem .1rem;
-    }
-    
-    .certiIp{
+    .operationIp {
         margin: 4px 0;
         padding: .3rem .1rem;
     }
 
-    .submitBtn{
+    .certiIp {
+        margin: 4px 0;
+        padding: .3rem .1rem;
+    }
+
+    .submitBtn {
         padding: .5rem 4rem;
         margin: 0 3.9rem;
     }
-
 </style>
 
 <body>
@@ -81,19 +80,9 @@
                 <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
                 <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
                 <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
-                <input class="operationIp" placeholder="Operations Done" name="operation_done" type="text"></input>
             </div>
 
             <div class="certiDiv">
-                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
-                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
-                <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
                 <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
                 <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
                 <input class="certiIp" placeholder="Certificate" name="certificate" type="text"></input>
@@ -103,6 +92,16 @@
         </div>
         <button class="submitBtn" type="submit">Submit</button>
     </form>
+
+    <div class="dataContainer">
+
+        <%data.forEach((allData)=>{%>
+            <h1>
+                <%=allData.name %>
+            </h1>
+        <%}) %>
+
+    </div>
 
 </body>
 

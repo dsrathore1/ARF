@@ -5,6 +5,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import DB_Conn from "./DB/connectDB.js";
 import morgan from "morgan";
+import model from "./Model/model.js";
+import { Collection } from "mongoose";
 
 
 Dotenv.config({ path: "config.env" });
@@ -28,8 +30,11 @@ app.use(function (req, res, next) {
 app.set("view engine", "ejs");
 app.set("views", "Views");
 
-app.get("/", (req, res) => {
-    res.render("index.ejs");
+app.get("/", async (req, res) => {
+    const data = await model.find({});
+    res.render("index.ejs", {
+        data: data
+    });
 });
 
 DB_Conn();
