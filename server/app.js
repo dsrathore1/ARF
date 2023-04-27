@@ -6,7 +6,6 @@ import bodyParser from "body-parser";
 import DB_Conn from "./DB/connectDB.js";
 import morgan from "morgan";
 import model from "./Model/model.js";
-import { Collection } from "mongoose";
 
 
 Dotenv.config({ path: "config.env" });

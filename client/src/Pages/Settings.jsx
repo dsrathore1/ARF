@@ -19,11 +19,11 @@ const Settings = () => {
                             <div className='settingInputDiv settingTop'>
                                 <div className='settingName'>
                                     <label className='settingLabel'>Full Name</label>
-                                    <input className='settingInputs' name='name' value="Gurbirpal Singh" type='text' />
+                                    <input className='settingInputs' name='name' placeholder="Gurbirpal Singh" type='text' />
                                 </div>
                                 <div className='settingName'>
                                     <label className='settingLabel'>Username</label>
-                                    <input className='settingInputs' name='username' value="Gurbirpal23" type='text' />
+                                    <input className='settingInputs' placeholder    ="Gurbirpal23" type='text' />
                                 </div>
                             </div>
                             <div className='mainPwdDiv settingInputDiv'>
@@ -39,11 +39,11 @@ const Settings = () => {
                             <div className='settingInputDiv mainEmailMobDiv'>
                                 <div className='emailAndMob'>
                                     <label className='settingLabel'>Email</label>
-                                    <input className='settingInputs' value="gurbirpalsingh@gmail.com" />
+                                    <input className='settingInputs' placeholder="gurbirpalsingh@gmail.com" />
                                 </div>
                                 <div className='emailAndMob'>
                                     <label className='settingLabel'>Mobile Number</label>
-                                    <input className='settingInputs' value="9923567916" />
+                                    <input className='settingInputs' placeholder="9923567916" />
                                 </div>
                             </div>
                         </div>
