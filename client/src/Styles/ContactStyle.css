@@ -153,3 +153,25 @@
 
 
 /* Right Side */
+
+.addPersonDiv{
+    position: relative;
+}
+
+.notiIcon{
+    position: absolute;
+    height: 1.2rem;
+    width: 1.2rem;
+    background: rgb(255, 58, 58);
+    border-radius: 50%;
+    top: 1.2rem;
+    right: 17.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notiNumber{
+font-size: 13px;
+color: #fff;
+}
