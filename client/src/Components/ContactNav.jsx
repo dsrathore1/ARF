@@ -2,6 +2,7 @@ import React from 'react'
 import Search from "../Assets/Icons/search.png";
 import Profile from "../Assets/ProfilePic.jpg";
 import Logo from "../Assets/Logo.png";
+import { IoMdCart } from 'react-icons/io';
 
 const ContactNav = () => {
     return (
@@ -15,6 +16,7 @@ const ContactNav = () => {
                     </div>
                 </div>
                 <div className='contactNavRight'>
+                <IoMdCart/>
                     <div className='adminProfile' onClick={() => alert("Gurbirpal Singh")}>
                         <img className='adminProfilePic' src={Profile} alt='#profilePic' />
                         <div className='adminProfileDetails'>

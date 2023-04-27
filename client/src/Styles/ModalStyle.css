@@ -1,0 +1,174 @@
+.modalContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5e5e54b;
+    backdrop-filter: blur(4px);
+}
+
+.mainModalContainer {
+    background: #fff;
+    height: 65%;
+    width: 50%;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+}
+
+.uniqueId {
+    color: #9370d8;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.memberName {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.memberRole {
+    color: #9370d8;
+    font-weight: 600;
+}
+
+.memberRank {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.memberRank::before {
+    content: "";
+    position: absolute;
+    height: .7vh;
+    width: 10%;
+    background: #aa89ec;
+    right: 45%;
+    bottom: -.3rem;
+    border-radius: 1rem;
+}
+
+
+.memberCertiAndOps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.memberCertiContainer {
+    width: 30vh;
+    text-align: center;
+
+}
+
+.certificate {
+    text-transform: uppercase;
+    color: #aa89ec;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.listOfCerti {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.certiList {
+    white-space: nowrap;
+    margin: .2rem 0;
+    width: 30vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .3s ease-in-out;
+}
+
+.certiList:hover {
+    overflow: visible;
+}
+
+.operations {
+    text-align: center;
+    width: 30vh;
+}
+
+.ops {
+    color: #aa89ec;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.listOfOps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.opsList {
+    white-space: nowrap;
+    margin: .2rem 0;
+    width: 30vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-start;
+    transition: all .3s ease-in-out;
+}
+
+.opsList:hover{
+    overflow: visible;
+}
+
+.modalActionBtns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.modalSubData {
+    margin: .5rem;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.modalSubData:active {
+    transform: translateY(2px);
+}
+
+.addActionBtn {
+    background: #9370d8;
+}
+
+.editActionBtn {
+    background: #62f755
+}
+
+.deleteActionBtn {
+    background: #fb2222;
+}
+
+.contact{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .2rem 0;
+}

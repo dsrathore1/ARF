@@ -32,19 +32,14 @@
     border-left: 4px solid #fff;
 }
 
-.sideMenuContact {
-    background: #ffffff1d;
-    border-left: 4px solid #fff;
-}
-
 .sideMenuLogOutBtn {
     position: absolute;
     bottom: 2rem;
-    right: 2rem;
+    right: 40%;
     color: #fff;
     font-size: 1.1rem;
     text-transform: uppercase;
-    align-items: center;
     transition: all .3s ease-in-out;
-    display: flex;  
+    display: flex;
+    align-items: center;
 }

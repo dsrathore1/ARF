@@ -51,12 +51,11 @@
     height: 18rem;
     width: 18rem;
     border-radius: 50%;
-    margin-top: 4rem;
+    margin-top: 7rem;
     background: #9d47e9;
     border: none;
     outline: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 }
 
 .emergencyBtn:active {
@@ -70,24 +69,85 @@
     flex-direction: column;
 }
 
-.profileImg{
+.profileImg {
     height: 2.4rem;
 }
 
-.profilePara{
+.profilePara {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.alertIcon{
+.alertIcon {
     position: absolute;
-    top:2.3rem;
+    top: 2.3rem;
     left: -3.1rem;
     height: 2.4rem;
 }
 
-.center{
+.center {
     position: relative;
+}
+
+.homeTitle {
+    animation: 2s anim-lineUp ease-in-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.homeClick {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: #ffffff;
+    background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 230px;
+    }
+
+    100% {
+        background-position: 0px;
+    }
 }

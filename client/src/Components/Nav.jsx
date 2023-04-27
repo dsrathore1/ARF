@@ -9,6 +9,9 @@ const Nav = () => {
     if (location.pathname === "/contacts") {
         return null;
     }
+    if (location.pathname === "/setting") {
+        return null;
+    }
     if (location.pathname === "/login") {
         return null;
     }
@@ -16,6 +19,9 @@ const Nav = () => {
         return null;
     }
     if (location.pathname === "/signUp") {
+        return null;
+    }
+    if (location.pathname === "/modal") {
         return null;
     }
 
@@ -29,7 +35,7 @@ const Nav = () => {
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/contacts"} className='list Con'>Contacts</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/about"} className='list About'>About Us</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/location"} className='list Loc'>Location</NavLink>
-                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/settings"} className='list Set'>Settings</NavLink>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/setting"} className='list Set'>Settings</NavLink>
                     </ol>
                     <Link to={'/login'}>
                         <p href='#contactMe' className='loginBtn btn'>Logout</p>

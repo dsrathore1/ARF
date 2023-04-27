@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/SideMenuStyle.css";
 
 import { BiHomeCircle, BiPaperPlane, BiLocationPlus } from "react-icons/bi";
@@ -13,14 +13,14 @@ const SideMenu = () => {
             <div className='sideMenuMainContainer'>
                 <div className='sideMenuNavigation'>
                     <ol className='sideMenuAllList'>
-                        <Link to={"/"}><li className='sideMenuList home'> <BiHomeCircle style={{ marginRight: "1rem" }} /> Home</li></Link>
-                        <Link to={"/contacts"}><li className='sideMenuList sideMenuContact'><RiContactsLine style={{ marginRight: "1rem" }} /> Contacts</li></Link>
-                        <Link to={"/about"}><li className='sideMenuList about'><BiPaperPlane style={{ marginRight: "1rem" }} />About Us</li></Link>
-                        <Link to={"/location"}><li className='sideMenuList location'><BiLocationPlus style={{ marginRight: "1rem" }} />Location</li></Link>
-                        <Link to={"/settings"}><li className='sideMenuList setting'><GoSettings style={{ marginRight: "1rem" }} />Settings</li></Link>
+                        <NavLink to={"/"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList home'> <BiHomeCircle style={{ marginRight: "1rem" }} /> Home</NavLink>
+                        <NavLink to={"/contacts"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList sideMenuContact'><RiContactsLine style={{ marginRight: "1rem" }} /> Contacts</NavLink>
+                        <NavLink to={"/about"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList about'><BiPaperPlane style={{ marginRight: "1rem" }} />About Us</NavLink>
+                        <NavLink to={"/location"} className='sideMenuList location' style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })}><BiLocationPlus style={{ marginRight: "1rem" }} />Location</NavLink>
+                        <NavLink to={"/setting"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList setting'><GoSettings style={{ marginRight: "1rem" }} />Settings</NavLink>
                     </ol>
                 </div>
-                <Link to={"/login"}>  <span className='sideMenuLogOutBtn'><HiOutlineLogout style={{ marginRight: ".5rem", fontSize:"1.8rem"}} /></span></Link>
+                <NavLink to={"/login"}>  <span className='sideMenuLogOutBtn'><HiOutlineLogout style={{ marginRight: ".5rem", fontSize: "1.8rem" }} /></span></NavLink>
             </div>
         </>
     )

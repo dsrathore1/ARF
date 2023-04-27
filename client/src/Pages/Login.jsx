@@ -1,12 +1,10 @@
 import React from 'react';
-import "../Styles/LoginSignUpStyle.scss";
+import "../Styles/LoginSignUpStyle.css";
 import Logo from "../Assets/Logo.png";
 import { Link } from 'react-router-dom';
 import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
-import { motion } from "framer-motion";
-
 
 const Login = () => {
 
@@ -36,7 +34,7 @@ const Login = () => {
                     <Link className='loginNavLinks loginJoin' to={"/signUp"}>Join</Link>
                 </div>
                 <div className='loginContentContainer'>
-                    <h1 className='loginNow'>Login Now<motion.div className='fullStop'></motion.div></h1>
+                    <h1 className='loginNow'>Login Now<div className='fullStop'></div></h1>
                     <p className='signUpQ'>Don't have an account? <Link className='signUpBtn' to={"/signUp"}>Sign Up</Link></p>
                     <form className='formData'>
                         <div className='commonDiv uNameDiv'>

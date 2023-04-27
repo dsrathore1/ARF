@@ -6,6 +6,8 @@ import Contact from "./Pages/Contact";
 import Location from "./Pages/Location";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+import Settings from "./Pages/Settings";
+import Modal from "./Components/Modal";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="*" element={<h1>Error</h1>} />
+        <Route path="/setting" element={<Settings />} />
+        <Route path="/modal" element={<Modal />} />
       </Routes>
     </Router>
   );

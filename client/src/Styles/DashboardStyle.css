@@ -109,6 +109,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 .7rem;
 }
 
 .emailData {
@@ -119,16 +120,14 @@
     justify-content: flex-start;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 25%;
 }
 
 .nameData {
     white-space: nowrap;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 25%;
     margin-left: 1.3rem;
     font-weight: 800;
 }
@@ -147,3 +146,4 @@
     height: 3rem;
     width: 3rem;
 }
+

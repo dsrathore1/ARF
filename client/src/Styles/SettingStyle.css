@@ -1,0 +1,160 @@
+.settingMainContainer {
+    height: 90vh;
+    width: 100%;
+}
+
+.settingLeftSide {
+    width: 15%;
+    float: left;
+}
+
+.settingRightSide {
+    width: 85%;
+    float: right;
+    height: 90vh;
+    color: #fff;
+
+}
+
+.settingHeading {
+    display: flex;
+    margin: 1rem 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.ProfileTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.ProfileTitle::before {
+    bottom: -.3rem;
+    height: .2rem;
+    border-radius: 1rem;
+    width: 5vw;
+    background: #9370d8;
+    content: "";
+    margin-right: 1rem;
+    position: absolute;
+}
+
+.profileFullStop {
+    height: .6rem;
+    width: .6rem;
+    margin-bottom: 1rem;
+    margin-left: .3rem;
+    background: #9370d8;
+    border-radius: 50%;
+}
+
+.settingWorkingSpace {
+    height: 85%;
+    width: 100%;
+    background: #fff;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    color: #000;
+}
+
+.editArea {
+    margin: 0 3em;
+}
+
+.settingInputDiv {
+    margin: .5rem 3rem;
+    display: grid;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.mainPwdDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settingName {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.settingTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pwdAndCP {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mainEmailMobDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emailAndMob {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.settingLabel {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    width: 20vw;
+    padding: 1rem 0;
+    color: #9370d8;
+    font-weight: 600;
+}
+
+
+.settingInputs {
+    width: 25vw;
+    padding: 1rem .4rem;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #cfcfcf28;
+    cursor: pointer;
+    caret-color: #9370d8;
+    border-radius: 5px;
+}
+
+.settingInputs:focus{
+    border: 3px solid #9370d8;
+}
+
+.settingBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingUpdateBtn {
+    padding: .6rem 0;
+    width: 20vw;
+    border: none;
+    outline: none;
+    background: #9370d8;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 12px 1px #bbbbbb;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.settingUpdateBtn:active {
+    transform: scale(.9);
+}

@@ -4,7 +4,7 @@ import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import Logo from "../Assets/Logo.png";
-import "../Styles/LoginSignUpStyle.scss";
+import "../Styles/LoginSignUpStyle.css";
 
 const SignUp = () => {
     return (
