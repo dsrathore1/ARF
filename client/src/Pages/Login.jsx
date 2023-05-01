@@ -1,12 +1,34 @@
 import React from 'react';
 import "../Styles/LoginSignUpStyle.css";
 import Logo from "../Assets/Logo.png";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const [value, setValue] = React.useState({
+        email: "",
+        pwd: ""
+    })
+
+    const loginForm = async(e) => {
+        e.preventDefault();
+        const verifyUser = signInWithEmailAndPassword(auth, value.email, value.pwd);
+        try {
+            console.log(verifyUser);
+            navigate("/");
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    React.useEffect(() => {
+        document.title = "Login";
+    })
 
     const [isActiveUser, setIsActiveUser] = React.useState(false);
     const [isActiveEmail, setIsActiveEmail] = React.useState(false);
@@ -36,7 +58,7 @@ const Login = () => {
                 <div className='loginContentContainer'>
                     <h1 className='loginNow'>Login Now<div className='fullStop'></div></h1>
                     <p className='signUpQ'>Don't have an account? <Link className='signUpBtn' to={"/signUp"}>Sign Up</Link></p>
-                    <form className='formData'>
+                    <form className='formData' onSubmit={loginForm}>
                         <div className='commonDiv uNameDiv'>
                             <label className='loginLabels usernameLabel'>Username</label>
                             <div className='inputContainer' onClick={handleUser} style={{

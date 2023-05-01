@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Home</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mainContainer {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .heading {
+        margin: 3rem 0;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .allLink {
+        margin: 1rem 0;
+    }
+
+    .links {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .routeLink {
+        color: rgb(53, 53, 255);
+        font-weight: 600;
+    }
+</style>
+
+<body>
+    <div class="mainContainer">
+        <h1 class="heading">All Routes of Backend</h1>
+        <ol class="allLink">
+            <p class="links"><a class="routeLink" href="/data">/showData</a> Get your data</p>
+            <p class="links"><a class="routeLink" href="/getData">/getData</a> Get your data in JSON Format</p>
+            <p class="links"><a class="routeLink" href="/getData">/postData</a> Post your data</p>
+            <p class="links"><a class="routeLink" href="/updateData">/updateData</a> Update your data</p>
+            <p class="links"><a class="routeLink" href="/deleteData">/deleteData</a> Delete your data</p>
+        </ol>
+    </div>
+</body>
+
+</html>

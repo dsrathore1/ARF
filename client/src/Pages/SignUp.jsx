@@ -1,12 +1,46 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { BiUser } from "react-icons/bi";
+import { BiPhone, BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineEye } from "react-icons/ai";
 import Logo from "../Assets/Logo.png";
 import "../Styles/LoginSignUpStyle.css";
+import { auth } from "../firebaseConfig.js";
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+    const navigate = useNavigate();
+
+    const [values, setValues] = React.useState({
+        username: "",
+        email: "",
+        pwd: ""
+    });
+
+    const signUpForm = async (e) => {
+        e.preventDefault();
+        const create = createUserWithEmailAndPassword(auth, values.email, values.pwd);
+
+        try {
+            console.log(create);
+            const user = (await create).user;
+
+            updateProfile(user, {
+                displayName: values.username
+            });
+            console.log(user);
+            navigate("/");
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        document.title = "Sign Up";
+    }, [])
+
+
     return (
         <>
             <div className='loginMainContainer'>
@@ -19,21 +53,21 @@ const SignUp = () => {
                 <div className='loginContentContainer'>
                     <h1 className='loginNow signUpLogo'>CREATE NEW ACCOUNT<div className='fullStop'></div></h1>
                     <p className='signUpQ'>Already have an account? <Link className='signUpBtn' to={"/login"}>Log In</Link></p>
-                    <form className='formData'>
+                    <form className='formData' onSubmit={signUpForm}>
                         <div className='commonDiv' >
                             <div className='uNameDiv'>
                                 <div className='fName'>
-                                    <label className='loginLabels usernameLabel'>First Name</label>
+                                    <label className='loginLabels usernameLabel'>Full Name</label>
                                     <div className='inputContainer fNameIp'>
-                                        <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
+                                        <input className='loginInputs usernameIp' placeholder='Shyam Zala' value={values.username} name='fname' onChange={(e) => { setValues((prev) => ({ ...prev, username: e.target.value })) }} />
                                         <BiUser style={{ fontSize: "1.5rem" }} />
                                     </div>
                                 </div>
                                 <div className='lName'>
-                                    <label className='loginLabels usernameLabel'>Last Name</label>
+                                    <label className='loginLabels usernameLabel'>Phone Number</label>
                                     <div className='inputContainer lNameIp'>
-                                        <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
-                                        <BiUser style={{ fontSize: "1.5rem" }} />
+                                        <input className='loginInputs usernameIp' placeholder='9623142358' />
+                                        <BiPhone style={{ fontSize: "1.5rem" }} />
                                     </div>
                                 </div>
                             </div>
@@ -50,14 +84,14 @@ const SignUp = () => {
                         <div className='commonDiv emailDiv'>
                             <label className='loginLabels emailLabel'>Email</label>
                             <div className='inputContainer'>
-                                <input className='loginInputs emailIp' placeholder='examplezyx@gmail.com' />
+                                <input className='loginInputs emailIp' placeholder='examplezyx@gmail.com' name='email' value={setValues.email} onChange={(e) => { setValues((prev) => ({ ...prev, email: e.target.value })) }} />
                                 <HiOutlineMail style={{ fontSize: "1.5rem" }} />
                             </div>
                         </div>
                         <div className='commonDiv pwdDiv'>
                             <label className='loginLabels pwdLabel'>Password</label>
                             <div className='inputContainer'>
-                                <input className='loginInputs pwdIp' placeholder='*****' />
+                                <input className='loginInputs pwdIp' placeholder='*****' type='password' name="pwd" value={setValues.pwd} onChange={(e) => { setValues((prev) => ({ ...prev, pwd: e.target.value })) }} />
                                 <AiOutlineEye style={{ fontSize: "1.5rem" }} />
                             </div>
                         </div>

@@ -30,10 +30,7 @@ app.set("view engine", "ejs");
 app.set("views", "Views");
 
 app.get("/", async (req, res) => {
-    const data = await model.find({});
-    res.render("index.ejs", {
-        data: data
-    });
+    res.render("home.ejs");
 });
 
 DB_Conn();

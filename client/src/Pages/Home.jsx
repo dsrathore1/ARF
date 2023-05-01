@@ -6,7 +6,7 @@ import ProfilePic from "../Assets/ProfilePic.jpg";
 import Alert from "../Assets/Alert.png";
 import { motion } from "framer-motion";
 
-const Home = () => {
+const Home = (props) => {
   const [redBtn, setRedBtn] = React.useState(true);
 
   const handleBtn = () => {
@@ -33,7 +33,7 @@ const Home = () => {
         <div className="profileContainer">
           <img className="profileImg" src={ProfilePic} alt="#" />
           <div className="profilePara">
-            <p className="name">Gurbirpal Singh</p>
+            <p className="name">{props.name}</p>
             <p className="dis">DGNCC</p>
           </div>
         </div>

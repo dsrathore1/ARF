@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+
+<style>
+    .tableOfData {
+        margin: 1rem 0;
+    }
+</style>
+
+<body>
+    <table>
+        <tr class="headingRow">
+            <th>id</th>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Rank</th>
+            <th>Operation List</th>
+            <th>Certificate List</th>
+        </tr>
+        <%data.forEach((data)=>{%>
+        <tr class="dataCol">
+            <td class="everyData"><%=data._id %></td>
+            <td class="everyData"><%=data.role %></td>
+            <td class="everyData"><%=data.name %></td>
+            <td class="everyData"><%=data.email %></td>
+            <td class="everyData"><%=data.contactNum %></td>
+            <td class="everyData"><%=data.rank %></td>
+            <td><%=data.operation %></td>
+            <td><%=data.certificate %></td>
+        </tr>
+    </table>
+    <%}) %>
+</body>
+
+</html>
