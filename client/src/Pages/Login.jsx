@@ -15,7 +15,7 @@ const Login = () => {
         pwd: ""
     })
 
-    const loginForm = async(e) => {
+    const loginForm = async (e) => {
         e.preventDefault();
         const verifyUser = signInWithEmailAndPassword(auth, value.email, value.pwd);
         try {
@@ -66,7 +66,7 @@ const Login = () => {
                                 borderColor: isActiveUser ? "#9370d8" : "none",
                                 borderStyle: isActiveUser ? "solid" : "none",
                             }}>
-                                <input className='loginInputs usernameIp' placeholder='@exampleXYZ123' />
+                                <input className='loginInputs usernameIp' placeholder='Username' name='username' type='text' />
                                 <BiUser style={{ color: isActiveUser ? "#9370d8" : "#fff", fontSize: "1.5rem" }} />
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const Login = () => {
                                 borderColor: isActiveEmail ? "#9370d8" : "none",
                                 borderStyle: isActiveEmail ? "solid" : "none",
                             }} onClick={handleEmail}>
-                                <input className='loginInputs emailIp' placeholder='examplezyx@gmail.com' />
+                                <input className='loginInputs emailIp' placeholder='examplezyx@gmail.com' name='email' type='email' value={value.email} onChange={(e) => { setValue((prev) => ({ ...prev, email: e.target.value })) }} />
                                 <HiOutlineMail style={{ color: isActiveEmail ? "#9370d8" : "#fff", fontSize: "1.5rem" }} />
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const Login = () => {
                                 borderColor: isActivePwd ? "#9370d8" : "none",
                                 borderStyle: isActivePwd ? "solid" : "none",
                             }}>
-                                <input className='loginInputs pwdIp' placeholder='*****' />
+                                <input className='loginInputs pwdIp' placeholder='*****' name='pwd' type='password' value={value.pwd} onChange={(e) => { setValue((prev) => ({ ...prev, pwd: e.target.value })) }} />
                                 <AiOutlineEye style={{ color: isActivePwd ? "#9370d8" : "#fff", fontSize: "1.5rem" }} />
                             </div>
                         </div>
