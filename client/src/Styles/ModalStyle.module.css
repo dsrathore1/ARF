@@ -1,178 +1,153 @@
-/* .modalContainer {
+.modal {
     height: 100vh;
     width: 100vw;
     display: flex;
+    background: #0000001e;
     align-items: center;
     justify-content: center;
-    background: #e5e5e54b;
-    backdrop-filter: blur(4px);
 }
 
-.mainModalContainer {
+.modalBackground {
     background: #fff;
-    height: 65%;
-    width: 50%;
-    border-radius: 1.2rem;
-    padding: 1.5rem;
-}
-
-.uniqueId {
-    color: #9370d8;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-.memberName {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.memberRole {
-    color: #9370d8;
-    font-weight: 600;
-}
-
-.memberRank {
+    color: #fff;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.memberRank::before {
-    content: "";
-    position: absolute;
-    height: .7vh;
-    width: 10%;
-    background: #aa89ec;
-    right: 45%;
-    bottom: -.3rem;
+    width: 45%;
+    height: 80%;
     border-radius: 1rem;
 }
 
+.modalCloseBtn {
+    position: absolute;
+    right: 1rem;
+    top: 6px;
+    padding: .2rem .5rem;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+}
 
-.memberCertiAndOps {
+.headingDetails {
+    background: #e6e6e6de;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 2rem 0;
+    border-bottom: 1.5px solid #bbb;
 }
 
-.memberCertiContainer {
-    width: 30vh;
-    text-align: center;
-
+.aboutDetails {
+    margin: 0 .5rem;
+    color: #000;
 }
 
-.certificate {
+.profilePic {
+    height: 12vh;
+    width: 5vw;
+    border-radius: 4px;
+}
+
+.headingText {
     text-transform: uppercase;
-    color: #aa89ec;
-    font-size: 1.3rem;
-    font-weight: 600;
 }
 
-.listOfCerti {
-    list-style: none;
+.modalDesignation {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modalBtns {
+    position: absolute;
+    bottom: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
+    background: #000;
 }
 
-.certiList {
-    white-space: nowrap;
-    margin: .2rem 0;
-    width: 30vh;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all .3s ease-in-out;
-}
-
-.certiList:hover {
-    overflow: visible;
-}
-
-.operations {
-    text-align: center;
-    width: 30vh;
-}
-
-.ops {
-    color: #aa89ec;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.listOfOps {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.opsList {
-    white-space: nowrap;
-    margin: .2rem 0;
-    width: 30vh;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: flex;
-    justify-content: flex-start;
-    transition: all .3s ease-in-out;
-}
-
-.opsList:hover{
-    overflow: visible;
-}
-
-.modalActionBtns {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.modalSubData {
-    margin: .5rem;
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.modalCommonBtnEditing {
+    width: 50%;
     height: 8vh;
     font-size: 1.1rem;
     text-transform: uppercase;
     border: none;
     outline: none;
+}
+
+.modalDeleteBtn {
+    border-bottom-right-radius: 1rem;
+    background: #ff5656;
     color: #fff;
-    border-radius: .2rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
 }
 
-.modalSubData:active {
-    transform: translateY(2px);
+.modalAddBtn {
+    border-bottom-left-radius: 1rem;
 }
 
-.addActionBtn {
-    background: #9370d8;
+.modalInput {
+    width: 100%;
+    height: 9vh;
+    padding: .8rem 1rem;
+    border: .2px solid #000;
+    font-size: 1.1rem;
+    color: #000;
+    background: #fff;
 }
 
-.editActionBtn {
-    background: #62f755
+.modalNameInput {
+    border-bottom: none;
 }
 
-.deleteActionBtn {
-    background: #fb2222;
+.modalInput::placeholder {
+    font-size: 1.2rem;
 }
 
-.contact{
-    text-align: center;
+.modalAddressInput {
+    height: 15vh;
+}
+
+.modalListsBox {
+    display: flex;
+    height: 31.5vh;
+    align-items: center;
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.boxOperations {
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    border: .2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem;
+    border-top: none;
+}
+
+.boxCertificate {
+    border: .2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .5rem;
+    border-top: none;
+    border-left: none;
+    height: 100%;
+    list-style: none;
+    width: 50%;
+}
+
+.roleAndName {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: .2rem 0;
-} */
+}
 
-.headingText {
-    color: #fff;
+.modalRole {
+    border-bottom: none;
+    border-left: none;
 }

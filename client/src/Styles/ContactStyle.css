@@ -139,11 +139,11 @@
 }
 
 
-.adminFindBtn {
+/* .adminFindBtn {
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
 
-}
+} */
 
 
 .memberBtn:focus {
@@ -154,11 +154,11 @@
 
 /* Right Side */
 
-.addPersonDiv{
+.addPersonDiv {
     position: relative;
 }
 
-.notiIcon{
+.notiIcon {
     position: absolute;
     height: 1.2rem;
     width: 1.2rem;
@@ -171,7 +171,13 @@
     align-items: center;
 }
 
-.notiNumber{
-font-size: 13px;
-color: #fff;
+.notiNumber {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.driverBtn {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }

@@ -10,7 +10,7 @@ const Dashboard = () => {
         <>
             <div className='dashboardContainer'>
                 <div className='dashboardHeadingRow'>
-                    <h2 className='dashboardHeading'>Volunteers</h2>
+                    <h2 className='dashboardHeading'>Members</h2>
                     <button className='addNewBtn dashboardBtns'> Add New <AiOutlineUsergroupAdd style={{ fontSize: "1.5rem", marginLeft: "4px" }} /> </button>
                     <button className='importJsonFileBtn dashboardBtns'>Import JSON <VscJson style={{ fontSize: "1.5rem", marginLeft: "4px" }} /></button>
                     <button className='exportExcelBtn dashboardBtns'> Export Excel <SiMicrosoftexcel style={{ fontSize: "1.5rem", marginLeft: "4px" }} /></button>

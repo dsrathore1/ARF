@@ -5,7 +5,6 @@ import ContactNav from '../Components/ContactNav';
 import Dashboard from '../Components/Dashboard';
 
 const Contact = () => {
-
     useEffect(() => {
         document.title = "Contacts";
     });
@@ -20,11 +19,12 @@ const Contact = () => {
                 <div className='contactPageRightSide'>
                     <div className='rightSideHandler'>
                         <div className='memberBtnContainer'>
-                            <button className='volunteersFindBtn memberBtn'>Volunteers</button>
+                            <button className='volunteersFindBtn memberBtn'>Members</button>
                             <button className='adminFindBtn memberBtn'>Admin</button>
+                            <button className='driverBtn memberBtn'>Driver</button>
                         </div>
                         <div className='membersList'>
-                            <p>Total Volunteers : <span className='totalMembersData'>1000</span></p>
+                            <p>Total Members : <span className='totalMembersData'>1000</span></p>
                         </div>
                     </div>
                     <Dashboard />
