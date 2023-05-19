@@ -36,6 +36,7 @@
     border-top-right-radius: 1rem;
     display: flex;
     align-items: center;
+    position: relative;
     border-bottom: 1.5px solid #bbb;
 }
 
@@ -150,4 +151,11 @@
 .modalRole {
     border-bottom: none;
     border-left: none;
+}
+
+.modalId{
+    position: absolute;
+    color: #000;
+    right: 5px;
+    bottom: 2px;
 }

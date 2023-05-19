@@ -15,6 +15,7 @@ const Modal = () => {
                                 <h1 className={style.headingText}>Digpal Singh Rathore <span className={style.modalDesignation}>(Designation)</span></h1>
                                 <p className={style.headingEmail}>dsrathorebsw1234@gmail.com</p>
                             </div>
+                            <span className={style.modalId}>id-3443439655</span>
                         </div>
                         <div className={style.detailsContainer}>
                             <div className={style.roleAndName}>
