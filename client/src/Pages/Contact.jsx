@@ -11,7 +11,7 @@ const Contact = () => {
 
     return (
         <>
-            <ContactNav />
+            <ContactNav show={true}/>
             <div className='contactContainer'>
                 <div className='contactPageLeftSide'>
                     <SideMenu />

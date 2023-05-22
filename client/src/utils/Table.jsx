@@ -11,7 +11,7 @@ const Table = () => {
                     <th className='rowHeading name'>Name</th>
                     <th className='rowHeading mobile'>Mobile</th>
                     <th className='rowHeading email'>Email</th>
-                    <th className='rowHeading action'>Action</th>
+                    <th className='rowHeading action'>Details</th>
                 </tr>
                 {/* Detail Area */}
                 <TableDetail />

@@ -70,6 +70,7 @@
 }
 
 .tableRow {
+    position: fixed;
     backdrop-filter: blur(4px);
     background: #ffffff12;
     color: #9370d8;
@@ -80,7 +81,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
     border-bottom: 3px solid #bdbdbd7a;
     cursor: default;
     z-index: 2;
@@ -147,3 +147,29 @@
     width: 3rem;
 }
 
+.getDetailsBtn {
+    padding: .8rem 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0px 8px 12px 0 #00000023;
+    font-size: .9rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #9370d8;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.getDetailsBtn:active {
+    transform: scale(.9);
+}
+
+.divModalContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.divModalPopUp {
+    position: absolute;
+}

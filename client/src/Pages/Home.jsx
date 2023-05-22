@@ -5,6 +5,7 @@ import LocationImg from "../Assets/location-Icon.png";
 import ProfilePic from "../Assets/ProfilePic.jpg";
 import Alert from "../Assets/Alert.png";
 import { motion } from "framer-motion";
+import Nav from "../Components/Nav";
 
 const Home = (props) => {
   const [redBtn, setRedBtn] = React.useState(true);
@@ -15,6 +16,7 @@ const Home = (props) => {
 
   return (
     <div className="homeMainContainer">
+      <Nav />
       <div className="headingRow">
         <div className="locationsContainer">
           <img className="locationImg" src={LocationImg} alt="@" />
@@ -54,7 +56,7 @@ const Home = (props) => {
         }}
         className="emergencyBtn"
         onClick={handleBtn}
-        style={{background:redBtn? "#9370d8":"red" }}
+        style={{ background: redBtn ? "#9370d8" : "red" }}
       >
         <img className="btnImg" src={PhoneImg} alt="#" />
       </motion.button>

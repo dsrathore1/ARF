@@ -6,7 +6,7 @@ import SideMenu from '../utils/SideMenu';
 const Settings = () => {
     return (
         <>
-            <Nav />
+            <Nav show={false} />
             <div className='settingMainContainer'>
                 <div className='settingLeftSide'>
                     <SideMenu />
@@ -22,8 +22,8 @@ const Settings = () => {
                                     <input className='settingInputs' name='name' placeholder="Gurbirpal Singh" type='text' />
                                 </div>
                                 <div className='settingName'>
-                                    <label className='settingLabel'>Username</label>
-                                    <input className='settingInputs' placeholder    ="Gurbirpal23" type='text' />
+                                    <label className='settingLabel'>Role</label>
+                                    <input className='settingInputs' placeholder="Admin" type='text' disabled />
                                 </div>
                             </div>
                             <div className='mainPwdDiv settingInputDiv'>

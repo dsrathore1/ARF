@@ -1,29 +1,9 @@
 import React from 'react';
 import '../Styles/NavStyle.css';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Nav = () => {
 
-    const location = useLocation();
-
-    if (location.pathname === "/contacts") {
-        return null;
-    }
-    if (location.pathname === "/setting") {
-        return null;
-    }
-    if (location.pathname === "/login") {
-        return null;
-    }
-    if (location.pathname === "/landingPage") {
-        return null;
-    }
-    if (location.pathname === "/signUp") {
-        return null;
-    }
-    if (location.pathname === "/modal") {
-        return null;
-    }
 
     return (
         <>
@@ -32,9 +12,9 @@ const Nav = () => {
                 <div className='navLinks'>
                     <ol className='lists'>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/"} className='list Home'>Home</NavLink>
-                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/contacts"} className='list Con'>Members</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/about"} className='list About'>About Us</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/location"} className='list Loc'>Location</NavLink>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/contacts"} className='list Con'>Members</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/setting"} className='list Set'>Settings</NavLink>
                     </ol>
                     <Link to={'/login'}>

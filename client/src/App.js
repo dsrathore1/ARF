@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import Nav from "./Components/Nav";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Location from "./Pages/Location";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
 import Settings from "./Pages/Settings";
+import Cart from "./Components/Cart.jsx";
 import Modal from "./Components/Modal";
 import { auth } from "./firebaseConfig.js";
 import React from "react";
@@ -30,7 +30,6 @@ function App() {
 
   return (
     <Router>
-      <Nav />
       <Routes>
         <Route path="/" element={<Home name={name} email={email} />} />
         <Route path="/about" element={<About />} />
@@ -40,6 +39,7 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/setting" element={<Settings />} />
         <Route path="/modal" element={<Modal />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );

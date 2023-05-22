@@ -8,6 +8,7 @@ import Stamp from "../Assets/Icons/stamp.png";
 import Location from "../Assets/Icons/location.png";
 import Start from "../Assets/Icons/start.png";
 import Contact from "../Assets/Icons/contact.png";
+import Nav from '../Components/Nav';
 
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
 
     return (
         <>
-
+            <Nav />
             <div className='aboutMainContainer'>
                 <div className='allHeadings'>
                     <Box />
@@ -38,10 +39,10 @@ const About = () => {
                     <h1 className='allServices'>We have immediate response</h1>
                     <p className='subPara'>Our mission is to empower organizations to provide quick <br /> and  immediate response to the victims.</p>
                     <div className='boxesModal'>
-                        <BoxModals title={"Accessibility Training"} para={"Whether here in Utah or on-site at your organization, WebAIM can provide web and document training to fit your needs."} img={Stamp} />
-                        <BoxModals title={"StrategicA11y"} para={"The Strategic Web Accessibility Workshop will help participants make strategic plans for the accessibility of their organizations."} img={Location} />
-                        <BoxModals title={"Technical Assistance"} para={"Need assistance implementing accessibility? WebAIM's expert staff can provide the assistance you need."} img={Start} />
-                        <BoxModals title={"Evaluation and Reporting"} para={"We can provide reports to help you know how accessible your site is and how to make it better."} img={Contact} />
+                        <BoxModals title={"Get in touch"} para={"An invitation to connect, Impress it upon letters, a symbol of respect. Sealing the bond, with every message sent."} img={Stamp} />
+                        <BoxModals title={"Location"} para={"Emergency response, a crucial guide, Coordinates and maps, helping rescuers stride. Saving lives, with precision and speed, side by side."} img={Location} />
+                        <BoxModals title={"Technical Assistance"} para={"Need assistance implementing accessibility? ARF's expert trainees can provide the assistance you need."} img={Start} />
+                        <BoxModals title={"Professional Teams"} para={"United in purpose and goal,Pooling diverse skills, achieving more as a whole. Collaboration and synergy, their success they extol."} img={Contact} />
                     </div>
                 </div>
             </div>

@@ -1,0 +1,228 @@
+:root {
+    --btn-color: #f1c40f;
+    --right-container-color: #030529;
+    --left-container-color: #ecf0f1;
+    --tab-background-color: #e5e9ea;
+    --universal-fontColor: #9073d8;
+    --cart-fontFamily: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cartMainContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cartLeftContainer {
+    position: relative;
+    background: var(--left-container-color);
+    width: 70%;
+}
+
+.cartLogo {
+    position: absolute;
+    left: 1rem;
+    height: 10rem;
+    background: var(--right-container-color);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    padding: 1.5rem;
+    box-shadow: 0px 3px 6px 0 #a8a8a8;
+    z-index: 1;
+}
+
+.cartLeftTitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    left: 10rem;
+    top: 4rem;
+    font-weight: 800;
+    font-family: var(--cart-fontFamily);
+    position: absolute;
+    z-index: 1;
+}
+
+.cartRightContainer {
+    background: var(--right-container-color);
+    width: 30%;
+    color: #fff;
+    position: relative;
+    box-shadow: -4px 0 12px 0 #a8a8a8;
+}
+
+.cartRightTitle {
+    position: absolute;
+    top: 5rem;
+    text-transform: capitalize;
+    left: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--universal-fontColor);
+}
+
+.cartCallBtn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--universal-fontColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartCallIcon {
+    margin-left: 1rem;
+    margin-top: 4px;
+}
+
+.cartTileContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.cartTileMainContainer {
+    height: 65vh;
+    width: 70%;
+    position: absolute;
+    bottom: 7rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.cartTile {
+    height: 23%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .5rem 0;
+    padding: 0 1rem;
+    background: #e5e9ea;
+    border-radius: 5px;
+}
+
+.cartTileProfile {
+    height: 3rem;
+}
+
+.cartBackBtn {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.backBtnArrow {
+    width: 3rem;
+}
+
+.deleteTile {
+    background: none;
+    color: #808080;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.cartBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 49vw;
+    position: absolute;
+    height: 10vh;
+    bottom: 1.5rem;
+}
+
+.subTotal {
+    font-size: 1rem;
+    cursor: default;
+}
+
+.subTotalDigit {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.nameOfVolunteer{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cartMsgBtn{
+    position: absolute;
+    bottom: 4.5rem;
+    width: 100%;
+    height: 10%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #9073d8;
+    background: var(--tab-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartMsgIcon{
+    margin-left: 1rem;
+    margin-top: 4px;
+}
+
+.rightContainerDetailsBox{
+    height: 55vh;
+    width: 100%;
+    position: absolute;
+    padding: 1rem 2rem;
+    top: 10rem;
+}
+
+.label{
+    font-weight: 300;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.locationInput{
+    width: 100%;
+    height: 10vh;
+    padding: .3rem .5rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: var(--tab-background-color);
+    resize: none;
+    border-radius: 3px;
+}
+
+.selectOption{
+    width: 100%;
+    font-size: 1.2rem;
+    height: 8vh;
+    padding: 0 .3rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: var(--tab-background-color);
+}

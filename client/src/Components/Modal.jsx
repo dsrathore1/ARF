@@ -2,27 +2,27 @@ import React from 'react';
 import style from "../Styles/ModalStyle.module.css";
 import Profile from "../Assets/ProfilePic.jpg";
 
-const Modal = () => {
+const Modal = ({ name, email, address, id, desig, rank }) => {
     return (
         <>
-            <div className={style.modal}>
+            <div className={style.modal} id='modalId'>
                 <div className={style.modalBackground}>
-                    <button className={style.modalCloseBtn}>X</button>
+                    <button className={style.modalCloseBtn} onClick={() => document.getElementById('modalId').style.display = "none"}>X</button>
                     <div className={style.modalMainContainer}>
                         <div className={style.headingDetails}>
                             <img className={style.profilePic} src={Profile} alt='#profileImg' />
                             <div className={style.aboutDetails}>
-                                <h1 className={style.headingText}>Digpal Singh Rathore <span className={style.modalDesignation}>(Designation)</span></h1>
-                                <p className={style.headingEmail}>dsrathorebsw1234@gmail.com</p>
+                                <h1 className={style.headingText}>{name} </h1>
+                                <p className={style.headingEmail}>{email}</p>
                             </div>
-                            <span className={style.modalId}>id-3443439655</span>
+                            <span className={style.modalId}>id-{id}</span>
                         </div>
                         <div className={style.detailsContainer}>
                             <div className={style.roleAndName}>
-                                <input className={`${style.modalInput} ${style.modalNameInput}`} placeholder='Name' disabled />
-                                <input className={`${style.modalInput} ${style.modalRole}`} placeholder='Role' />
+                                <input className={`${style.modalInput} ${style.modalNameInput}`} value={rank} />
+                                <input className={`${style.modalInput} ${style.modalRole}`} value={desig} />
                             </div>
-                            <input className={`${style.modalAddressInput} ${style.modalInput}`} placeholder='Address' disabled />
+                            <div className={`${style.modalAddressInput} ${style.modalInput}`} >{address}</div>
                             <div className={style.modalListsBox}>
                                 <ol className={style.boxOperations}>
                                     <li>1</li>
@@ -51,4 +51,4 @@ const Modal = () => {
     );
 }
 
-export default Modal
+export default Modal;

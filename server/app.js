@@ -5,7 +5,6 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import DB_Conn from "./DB/connectDB.js";
 import morgan from "morgan";
-import model from "./Model/model.js";
 
 
 Dotenv.config({ path: "config.env" });
