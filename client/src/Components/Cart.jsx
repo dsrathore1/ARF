@@ -8,7 +8,13 @@ import { BsArrowLeft } from 'react-icons/bs';
 import { MdOutlineMessage } from "react-icons/md";
 
 const Cart = () => {
+
+    React.useEffect(() => {
+        document.title = "Selected Volunteers";
+    });
+
     const navigate = useNavigate();
+    
     return (
         <>
             <div className={style.cartMainContainer}>

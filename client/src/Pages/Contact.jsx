@@ -6,7 +6,7 @@ import Dashboard from '../Components/Dashboard';
 
 const Contact = () => {
     useEffect(() => {
-        document.title = "Contacts";
+        document.title = "Members";
     });
 
     return (
@@ -19,7 +19,7 @@ const Contact = () => {
                 <div className='contactPageRightSide'>
                     <div className='rightSideHandler'>
                         <div className='memberBtnContainer'>
-                            <button className='volunteersFindBtn memberBtn'>Members</button>
+                            <button className='volunteersFindBtn memberBtn'>Volunteers</button>
                             <button className='adminFindBtn memberBtn'>Admin</button>
                             <button className='driverBtn memberBtn'>Driver</button>
                         </div>
