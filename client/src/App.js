@@ -1,15 +1,22 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import Location from "./Pages/Location";
-import Login from "./Pages/Login";
-import SignUp from "./Pages/SignUp";
-import Settings from "./Pages/Settings";
-import Cart from "./Components/Cart.jsx";
-import Modal from "./Components/Modal";
-import { auth } from "./firebaseConfig.js";
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// import Home from "./Pages/Home";
+// import About from "./Pages/About";
+// import Contact from "./Pages/Contact";
+// import Location from "./Pages/Location";
+// import Login from "./Pages/Login";
+// import SignUp from "./Pages/SignUp";
+// import Settings from "./Pages/Settings";
+// import Cart from "./Components/Cart.jsx";
+// import Modal from "./Components/Modal";
+// import LandingPage from "./Pages/LandingPage.jsx";
+
+import {
+  Home, About, Contact, Location, Login, SignUp, Settings, Cart, Modal, LandingPage
+} from "./Exports/exportsFile.js";
+
+import { auth } from "./firebaseConfig.js";
 
 function App() {
 
@@ -25,7 +32,7 @@ function App() {
         setName("");
         setEmail("");
       }
-    })
+    });
   }, []);
 
   return (
@@ -40,6 +47,7 @@ function App() {
         <Route path="/setting" element={<Settings />} />
         <Route path="/modal" element={<Modal />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/landingPage" element={<LandingPage />} />
       </Routes>
     </Router>
   );
