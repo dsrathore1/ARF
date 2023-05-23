@@ -16,12 +16,20 @@
     }
 
     .formDiv {
-        margin: 2rem 4rem;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .arrayDivClass {
-        width: 100%;
-        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        width: 40%;
     }
 
     .operationDiv {
@@ -36,39 +44,103 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 1rem 4rem;
         justify-content: start;
+        margin: 1rem 4rem;
     }
 
     .operationIp {
-        margin: 4px 0;
-        padding: .3rem .1rem;
+        padding: .7rem .4rem;
+        width: 100%;
+        font-size: 1rem;
+        background: #f3f3f3;
+        margin: .3rem 0;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    .operationIp:focus {
+        border: 2px solid #bbb;
+        background: #fff;
     }
 
     .certiIp {
-        margin: 4px 0;
-        padding: .3rem .1rem;
+        padding: .7rem .4rem;
+        width: 100%;
+        font-size: 1rem;
+        background: #f3f3f3;
+        margin: .3rem 0;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    .certiIp:focus {
+        border: 2px solid #bbb;
+        background: #fff;
     }
 
     .submitBtn {
         padding: .5rem 4rem;
         margin: 0 3.9rem;
+        width: 40%;
+        position: absolute;
+        height: 6vh;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        box-shadow: 1px 2px 6px 0 #5656563b;
+        bottom: 1rem;
+        background: #9370d8;
+        color: #fff;
+    }
+
+    .inputs {
+        padding: .7rem .4rem;
+        width: 40%;
+        font-size: 1rem;
+        background: #f3f3f3;
+        margin: .3rem 0;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    .inputs:focus {
+        border: 2px solid #bbb;
+        background: #fff;
+    }
+
+    .backBtn {
+        position: absolute;
+        top: 1rem;
+        background: none;
+        border: none;
+        outline: none;
+        left: 2rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
     }
 </style>
 
 <body>
+    <a class="backBtn" href="/">⬅ Go Back</a>
     <form class="formDiv" action="/postData" method="post">
-        <input placeholder="Name" name="name" type="text"></input>
+        <input class="inputs" placeholder="Name" name="name" type="text"></input>
+        <input class="inputs" placeholder="Email" name="email" type="email"></input>
 
-        <input placeholder="Email" name="email" type="email"></input>
+        <input class="inputs" placeholder="Contact Number" name="contactNum" type="tel"></input>
 
-        <input placeholder="Contact Number" name="contactNum" type="tel"></input>
+        <input class="inputs" placeholder="Rank" name="rank" type="text"></input>
 
-        <input placeholder="Rank" name="rank" type="text"></input>
+        <textarea class="inputs" placeholder="Address" name="address" type="text"></textarea>
 
-        <textarea placeholder="Address" name="address" type="text"></textarea>
-
-        <select name="role">
+        <select class="inputs" name="role">
             <option>Volunteer</option>
             <option>Admin</option>
         </select>
