@@ -9,36 +9,57 @@
 </head>
 
 <style>
-    .tableOfData {
-        margin: 1rem 0;
+    .Table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headingRow {
+        height: 2rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .everyData {
+        padding: .2rem 3rem;
+        width: 5vw;
+    }
+
+    .index {
+        text-align: center;
+    }
+
+    .role {
+        text-transform: uppercase;
+        font-weight: 700;
     }
 </style>
 
 <body>
-    <table>
+    <table class="Table">
         <tr class="headingRow">
+            <th>Sr. No.</th>
             <th>id</th>
             <th>Role</th>
             <th>Name</th>
             <th>Email</th>
             <th>Mobile Number</th>
             <th>Rank</th>
-            <th>Operation List</th>
-            <th>Certificate List</th>
         </tr>
-        <%data.forEach((data)=>{%>
-        <tr class="dataCol">
-            <td class="everyData"><%=data._id %></td>
-            <td class="everyData"><%=data.role %></td>
-            <td class="everyData"><%=data.name %></td>
-            <td class="everyData"><%=data.email %></td>
-            <td class="everyData"><%=data.contactNum %></td>
-            <td class="everyData"><%=data.rank %></td>
-            <td><%=data.operation %></td>
-            <td><%=data.certificate %></td>
+        <%data.forEach((data, index)=>{%>
+        <tr class="colData">
+            <td class="everyData index"><%=index+1 %></td>
+            <td class="everyData id"><%=data._id %></td>
+            <td class="everyData role"><%=data.role %></td>
+            <td class="everyData name"><%=data.name %></td>
+            <td class="everyData email"><%=data.email %></td>
+            <td class="everyData contactNum"><%=data.contactNum %></td>
+            <td class="everyData rank"><%=data.rank %></td>
         </tr>
+        <%}) %>
     </table>
-    <%}) %>
 </body>
 
 </html>

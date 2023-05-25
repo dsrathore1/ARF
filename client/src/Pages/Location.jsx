@@ -9,7 +9,6 @@ import { RiEarthquakeFill } from "react-icons/ri";
 
 import "../Styles/MapStyle.css";
 
-
 const Location = () => {
     React.useEffect(() => {
         document.title = "Disaster Location";
@@ -23,7 +22,6 @@ const Location = () => {
                     <div className='mapTop'>
                         <div className='location-addBtn'>
                             <input className='location-input' placeholder='Send Location' value={"Jodhpur, Rajasthan (India)"} />
-                            <button className='location-sendBtn'>Send</button>
                         </div>
                         <div className='location-icons'>
                             <p className='location-label'>fire</p>

@@ -1,11 +1,23 @@
 import model from "../Model/model.js";
 
-export const getData = async (req, res) => {
+export const addData = async (req, res) => {
     try {
         res.render("index");
     } catch (error) {
         console.log(error)
         res.status(404).json({ message: error.message });
+    }
+}
+
+export const getData = async (req, res) => {
+    try {
+        const data = await model.find({});
+        res.render("data",{
+            data: data
+        });
+        res.status(200);
+    } catch (error) {
+        console.log(error)
     }
 }
 
@@ -37,13 +49,12 @@ export const postData = async (req, res) => {
 
 export const getDataById = async (req, res) => {
     const id = req.body;
-    const getDataFromInput = await model.findById(id);
+    await model.findById(id);
     res.render("getById");
 }
 
 export const getById = async (req, res) => {
     const id = req.params.id;
     const getDataFromId = await model.findById(id);
-    // console.log(getDataFromId);
     res.json(getDataFromId);
 }

@@ -21,16 +21,10 @@ const Schema = await mongoose.Schema({
     address: {
         type: String
     },
-    operation_done: {
-        type: Array
-    },
-    certificate: {
-        type: Array
-    },
     role: {
         type: String,
         require: true,
-        default: "Volunteer"
+        default: "Member"
     }
 });
 
