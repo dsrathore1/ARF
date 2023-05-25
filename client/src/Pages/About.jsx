@@ -9,11 +9,11 @@ import Location from "../Assets/Icons/location.png";
 import Start from "../Assets/Icons/start.png";
 import Contact from "../Assets/Icons/contact.png";
 import Nav from '../Components/Nav';
+import Footer from '../Components/Footer';
 
 
 const About = () => {
     useEffect(() => {
-        document.title = 'About Us';
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     });
 
@@ -44,6 +44,7 @@ const About = () => {
                         <BoxModals title={"Technical Assistance"} para={"Need assistance implementing accessibility? ARF's expert trainees can provide the assistance you need."} img={Start} />
                         <BoxModals title={"Professional Teams"} para={"United in purpose and goal,Pooling diverse skills, achieving more as a whole. Collaboration and synergy, their success they extol."} img={Contact} />
                     </div>
+                    <Footer />
                 </div>
             </div>
         </>

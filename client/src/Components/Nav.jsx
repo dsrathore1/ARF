@@ -3,16 +3,13 @@ import '../Styles/NavStyle.css';
 import { NavLink, Link } from 'react-router-dom';
 
 const Nav = () => {
-
-
     return (
         <>
             <div className='navContainer' id='nav'>
                 <span className='logo'> A<br /><span className='s'>RF</span></span>
                 <div className='navLinks'>
                     <ol className='lists'>
-                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/"} className='list Home'>Home</NavLink>
-                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/about"} className='list About'>About Us</NavLink>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/"} className='list About'>Home</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/location"} className='list Loc'>Location</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/contacts"} className='list Con'>Members</NavLink>
                         <NavLink style={({ isActive }) => ({ color: isActive ? "#fff" : "#ffffffb4" })} to={"/setting"} className='list Set'>Settings</NavLink>

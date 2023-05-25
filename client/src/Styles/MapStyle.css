@@ -1,0 +1,55 @@
+.mainLocation {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.mapMainContainer {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    bottom: 0;
+}
+
+.mapTitle {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.mapContainer {
+    width: 100%;
+    height: 70%;
+}
+
+.mapTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 1rem;
+}
+
+.location-icon {
+    font-size: 1.5rem;
+}
+
+.location-icons {
+    display: flex;
+}
+
+.location-label {
+    color: #fff;
+    margin: 0 .3rem 0 1rem;
+    text-transform: capitalize;
+}
+
+.location-input {
+    padding: .5rem .2rem;
+    width: 30vw;
+}
+
+.location-sendBtn {
+    padding: .5rem 3rem;
+    background: #9370d8;
+    color: #fff;
+}

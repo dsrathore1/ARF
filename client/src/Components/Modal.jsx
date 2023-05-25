@@ -3,6 +3,7 @@ import style from "../Styles/ModalStyle.module.css";
 import Profile from "../Assets/ProfilePic.jpg";
 
 const Modal = ({ name, email, address, id, desig, rank }) => {
+
     return (
         <>
             <div className={style.modal} id='modalId'>
@@ -23,22 +24,6 @@ const Modal = ({ name, email, address, id, desig, rank }) => {
                                 <input className={`${style.modalInput} ${style.modalRole}`} value={desig} />
                             </div>
                             <div className={`${style.modalAddressInput} ${style.modalInput}`} >{address}</div>
-                            <div className={style.modalListsBox}>
-                                <ol className={style.boxOperations}>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                </ol>
-                                <ol className={style.boxCertificate}>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                </ol>
-                            </div>
                         </div>
                         <div className={style.modalBtns}>
                             <button className={`${style.modalAddBtn} ${style.modalCommonBtnEditing}`}>Add to Cart</button>

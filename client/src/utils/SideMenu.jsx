@@ -14,9 +14,9 @@ const SideMenu = () => {
                 <div className='sideMenuNavigation'>
                     <ol className='sideMenuAllList'>
                         <NavLink to={"/"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList home'> <BiHomeCircle style={{ marginRight: "1rem" }} /> Home</NavLink>
-                        <NavLink to={"/contacts"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList sideMenuContact'><RiContactsLine style={{ marginRight: "1rem" }} />Members</NavLink>
                         <NavLink to={"/about"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList about'><BiPaperPlane style={{ marginRight: "1rem" }} />About Us</NavLink>
                         <NavLink to={"/location"} className='sideMenuList location' style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })}><BiLocationPlus style={{ marginRight: "1rem" }} />Location</NavLink>
+                        <NavLink to={"/contacts"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList sideMenuContact'><RiContactsLine style={{ marginRight: "1rem" }} />Members</NavLink>
                         <NavLink to={"/setting"} style={({ isActive }) => ({ borderLeft: isActive ? "4px solid #fff" : "none", background:isActive?"#ffffff1d":"none" })} className='sideMenuList setting'><GoSettings style={{ marginRight: "1rem" }} />Settings</NavLink>
                     </ol>
                 </div>

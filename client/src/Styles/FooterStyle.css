@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.mainFooterContainer {
+    background: #000233;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.footerContainer {
+    color: #ffff;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+}
+
+.footerInnerContainer {
+    width: 33.33%;
+    margin: 1rem 3rem;
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+}
+
+.quickLinks {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 6px 0;
+}
+
+.contactInfoList {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contactInfo {
+    padding: 6px 0;
+}
+
+.creditSpan {
+    border-top: 1px solid #ffffff5b;
+    padding: 1rem 10rem;
+
+}
+
+.name-King{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.3rem;
+    margin-bottom: .8rem;
+}
+
+.nameSpan {
+    color: #b25bff;
+}
+
+.smList {
+    padding: 0 .6rem;
+
+}
+
+
+
+.socialMediaList {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.smList a {
+    list-style: none;
+    text-decoration: none;
+    color: #000233;
+}
+
+
+.portfolioHeading {
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.nameEmoji {
+    margin-right: 1rem;
+    font-size: 18px;
+}
+
+.quickLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 7.3rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.smImg:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.portSpan {
+    color: #b25bff;
+    font-weight: 900;
+}

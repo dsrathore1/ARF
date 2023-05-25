@@ -4,11 +4,11 @@ import axios from "axios";
 import Modal from '../Components/Modal';
 
 const TableDetail = () => {
-    const [data, setData] = React.useState([]); // Response Function
+    const [data, setData] = React.useState([]); // For Response Function
     const [data2, setData2] = React.useState([]); // For getOneData Function
 
     const response = async () => {
-        const { data } = await axios.get("http://localhost:4000/getData");
+        const { data } = await axios.get("http://localhost:4000/data");
         setData(data);
     }
 
@@ -27,7 +27,7 @@ const TableDetail = () => {
     return (
         <>
             {
-                data.map((all) => {
+                data && data.map((all) => {
                     return (
                         <motion.tr key={all._id} initial={{ opacity: 0, y: "60vh" }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .5, ease: "easeInOut" }} className='tableRowDetails' id='detailBlock'>
                             <td className='colData photoData'>{all._id}</td>
@@ -47,7 +47,7 @@ const TableDetail = () => {
                 </div>
             </div>
         </>
-    )
+    );
 }
 
 export default TableDetail
