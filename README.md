@@ -1,24 +1,3 @@
-<style>
-
-.Title{
-    text-align:center;
-    text-transform:uppercase;
-    font-size:4.1rem;
-    margin-bottom:-2.5rem;
-    color:#9370d8;
-}
-
-.titleName{
-    text-align:center;
-    text-transform:uppercase;
-    font-weight:500;
-}
-
-.introPara{
-    margin-top:3rem;
-}
-
-</style>
 <h1 class="Title">ARF</h1>
 <h5 class="titleName">Automating Response Force</h5>
 
