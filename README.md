@@ -35,7 +35,4 @@ We welcome contributions to improve the Automated Response Force system. To cont
 ## License 📝
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Support 📞
-For any questions or issues, please contact us at [support@autoresponseforce.com](mailto:support@autoresponseforce.com).
-
 🚀 Together, we can make a difference in disaster response! 🚀
